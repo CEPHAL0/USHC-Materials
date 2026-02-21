@@ -1,0 +1,22 @@
+Basic Filtering Exercises
+
+ 1. Get all columns for every claim where the city is exactly 'Żoliborz'.
+
+ 2. Get the first_name and last_name for all records where the amount is exactly 24.99.
+
+ 3. Get all data where the procedure_hours is greater than 10.
+
+ 4. Get a list of every unique (distinct) value found in the code column to see all types of procedures billed.
+
+ 5. Get all columns for patients where the last_name is 'Pigeram'.
+Compound Filtering Exercises
+
+ 6. Get the first_name, last_name, and amount where the gender is 'Male' and the amount is greater than 500.
+
+ 7. Get all columns for claims where the city is 'Żoliborz' or the city is 'Chicago'.
+
+ 8. Get the unique (distinct) list of cities where the amount is less than or equal to 50 and the gender is 'Female'.
+
+ 9. Get all data where the procedure_hours is between 2 and 5 and the code is '0510U'.
+
+ 10. Get the first_name, last_name, and ssn for all records where the gender is 'Male' and the amount is greater than 1000.

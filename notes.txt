@@ -1,0 +1,141 @@
+What is Database?
+- Collection of tables
+- Because not all tables share the same structure of data
+- Could store information about the claims in one table, could store the information about the insurance plans in another table
+- Databases are of two types: SQL (Structured Query Language)
+                              NoSQL (Not Only Structured Query Language)
+- SQL databases example: MySQL, Postgresql, SQLite, Oracle
+- NoSQL databases example: MongoDB, CockroachDB
+- SQL databases rely on the concept of relationships
+- SQL supports queries
+- Queries are the medium through which we interact with the database engine and work with data
+- CRUD (Create, Read, Update and Delete) Operations
+
+What is table?
+- Collection of data
+- Structured data -> same characteristics of data
+- Stored in tables
+- Rows and Columns
+- Columns -> Defines the structure and properties that need to be stored
+- Rows -> Data itself
+- Schema: It defines the structure of data
+
+
+What do we learn while studying SQL?
+- How to create a database
+- How to create a table
+- How to add data to a table
+- How to read the data from table
+- How to update the data in table
+- How to delete the data from table
+- How to perform calculations and analysis in the data without changing the data itself
+
+Types of Queries:
+1. DDL (Data Definition Language) - It is used to define the structure of tables (CREATE)
+2. DML (Data Manipulation Language) - It is used to work with the data in the table itself (INSERT, UPDATE, DELETE)
+3. DQL (Data Query Language) - It is used to retrieve and read the data from the table (SELECT)
+
+SQL Format:
+- It is plain English like statement
+- It always ends in semicolon (;)
+- It doesnot care about cases (CREATE and create are the same thing)
+- Standard Convention for tables is SQL keywords - uppercase, user words - lowercase
+Example: CREATE TABLE students;
+
+Data Types in SQL:
+1. Numbers: INT, SMALLINT, BIGINT, TINYINT, DECIMAL(p, s)
+Example: Decimal(10, 4) - 999999.9999 0.0000
+2. String/Character: CHAR(n), VARCHAR(n)
+Example: VARCHAR(5) - "Hello"
+3. TEXT, TINYTEXT, LONGTEXT
+4. DATE, TIME
+5. BOOLEAN: TRUE or FALSE
+
+
+Task 1:
+Create a table named claims with the following columns:
+- first_name : str
+- last_name : str
+- dob: date
+- ssn : bigint
+- gender: str
+- billing_code: str
+- billing_code_type: str
+- claim_number : bigint
+- relationship_code: str
+- billed_amount: decimal with 2 numbers after point
+
+Add 20 data with different values in each columns
+Select certain columns
+Count the number of male patients
+How many claims are of billing code type CPT
+
+Filtering
+- Operators: >, <, =, !=, >=, <= (Comparison Operators)
+- Boolean Algebra
+
+Distinct 
+- Only show the unique data
+
+Grouping and Aggregating
+- Grouping - Taking one or multiple columns and then calculating other fields
+- Aggregating - Calculating Columns
+For example: If I want the average spending amount of males and females in every city , then
+Grouping Columns - city, gender
+Aggregating Columns - amount
+Aggregation - average
+
+Aggregation Types:
+Numbers:
+1. Sum
+2. Min
+3. Max
+4. Median
+5. Quartiles (Q1, Q2, Q3)
+6. Percentiles
+7. average
+8. Standard Deviation
+
+String:
+- Array
+- Concatenation (Joining multiple data with a certain character)
+- Count 
+
+
+City        billing_codes_aggregation
+Pandian     [0501U, 9964, 89H90] (Array)
+Kondrovo    0501U 9964 89H90 (Concatenation)
+
+Syntax for aggregation:
+SELECT grouping_columns, aggregation_type(aggregating_column), aggregation_type_2(aggregating_column_2) FROM table_name
+GROUP BY grouping_columns
+
+Alias
+- Temporarily Rename columns while displaying
+- Use the keyword AS 
+
+Sorting
+- The order in which the data is to be shown
+- We can either use single column or multiple columns for ordering
+- Ordering can be of two types: descending order and ascending order
+- Ordering can be also be mixed
+- Ordering syntax:
+SELECT
+FROM
+WHERE
+GROUP BY
+ORDER BY column_name ordering_type, column_name ordering_type
+
+ordering type: asc or desc
+
+Filtering on calculated aggregated column
+- Use HAVING instead of WHERE
+
+
+
+SELECT
+FROM
+WHERE
+GROUP BY
+HAVING
+ORDER BY

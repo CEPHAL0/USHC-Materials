@@ -1,0 +1,14 @@
+AND OR NOT
+
+AND - All of the conditons must be true for AND condition to be true
+billing_code_type = 'CPT' AND billing_amount > 500
+
+OR - Any of the conditions should be true (At least one condition should be true for the condition to be true)
+billing_code_type = 'CPT' OR billing_amount < 200
+
+if gender = Male -> relationship_code = 'Spouse' (AND)
+or billed_amount > 100
+
+NOT - Reverses our condition
+billing_code_type != 'CPT'
+NOT billing_code_type = 'CPT'

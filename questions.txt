@@ -1,0 +1,15 @@
+Find the total billing amount grouped by insurance provider.
+
+Calculate the average age of patients for each medical condition.
+
+Count how many patients were admitted under each admission type (Urgent, Emergency, Elective).
+
+Find the maximum and minimum billing amount per hospital.
+
+How many patients had each type of test result (Normal, Abnormal, Inconclusive)?
+
+Find all insurance providers where the total billing amount exceeds $500,000.
+
+List all medical conditions that have more than 100 patients, ordered by patient count descending.
+
+Find all hospitals where the average billing amount is greater than $30,000.
